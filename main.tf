@@ -1,9 +1,11 @@
 terraform {
   cloud {
-    organization = "cloudclub-iac"
+    # 만드신 oraganization 이름으로 변경해주세요.
+    organization = "cloudclub-iac-b"
 
+    # 만드신 workspace 이름으로 변경해주세요.
     workspaces {
-      name = "cloudclub-iac-lab"
+      name = "cloudclub-iac-b-lab"
     }
   }
 
