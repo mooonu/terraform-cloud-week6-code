@@ -1,3 +1,20 @@
+terraform {
+  cloud {
+    organization = "cloudclub-iac"
+
+    workspaces {
+      name = "cloudclub-iac-lab"
+    }
+  }
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 provider "aws" {
   region = "ap-northeast-2"
 }
